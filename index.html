@@ -1,182 +1,644 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titoum Beauty | Belmadani Keltoum Nadia - Lissage & Onglerie</title>
-    <!-- Tailwind CSS pour le design professionnel -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Titoum Beauty | Belmadani Keltoum Nadia</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Polices élégantes et modernes -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: 'Poppins', sans-serif; }
-        .font-serif { font-family: 'Playfair Display', serif; }
+        body{
+            font-family:'Poppins',sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        .font-serif{
+            font-family:'Playfair Display',serif;
+        }
+
+        .hero-gradient{
+            background: linear-gradient(
+                135deg,
+                rgba(250,247,242,1) 0%,
+                rgba(255,255,255,1) 100%
+            );
+        }
+
+        .overlay{
+            background: linear-gradient(
+                to top,
+                rgba(0,0,0,0.55),
+                rgba(0,0,0,0.1)
+            );
+        }
     </style>
 </head>
+
 <body class="bg-[#FAF7F2] text-[#2C2C2C]">
 
-    <!-- BARRE DE NAVIGATION -->
-    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex flex-col">
-                <a href="#" class="font-serif text-xl md:text-2xl font-bold tracking-widest text-[#8A7156]">TITOUM BEAUTY</a>
-                <span class="text-[10px] uppercase tracking-wider text-gray-400">Par Keltoum Nadia</span>
-            </div>
-            <div class="space-x-6 flex font-medium items-center">
-                <a href="#prestations" class="hover:text-[#8A7156] transition hidden sm:inline-block">Prestations</a>
-                <a href="#instagram" class="hover:text-[#8A7156] transition hidden sm:inline-block">Réalisations</a>
-                <a href="#reservation" class="bg-[#8A7156] text-white px-4 py-2 rounded-full text-sm hover:bg-[#725C44] transition">Prendre RDV</a>
-            </div>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
-    <!-- SECTION PRINCIPALE (HERO) -->
-    <section class="max-w-6xl mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12">
-        <div class="flex-1 space-y-6">
-            <span class="text-[#8A7156] uppercase tracking-widest font-semibold text-sm">Institut de Beauté Premium</span>
-            <h1 class="font-serif text-4xl md:text-6xl font-bold text-[#1A1A1A] leading-tight">
-                L'art du lissage et de l'onglerie par <span class="italic text-[#8A7156]">Keltoum Nadia</span>
-            </h1>
-            <p class="text-gray-600 text-lg">
-                Bienvenue chez <strong>Titoum Beauty</strong>. Spécialiste certifiée en lissages capillaires profonds, manucure soignée et pédicure spa. Retrouvez un éclat incomparable.
-            </p>
-            <div class="flex flex-wrap gap-4 pt-2">
-                <a href="#reservation" class="bg-[#1A1A1A] text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-[#333333] transition">
-                    Prendre un rendez-vous
-                </a>
-                <a href="https://www.instagram.com/titoumbeauty/" target="_blank" class="border border-gray-300 bg-white text-gray-700 px-6 py-4 rounded-full font-semibold hover:bg-gray-50 transition inline-flex items-center gap-2">
-                    <svg class="w-5 h-5 fill-current text-pink-600" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                    Voir l'Instagram
-                </a>
-            </div>
-        </div>
-        <!-- Image principale -->
-        <div class="flex-1">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Soin Titoum Beauty" class="w-full h-[450px] object-cover rounded-3xl shadow-xl border-4 border-white">
-        </div>
-    </section>
-
-    <!-- SECTION PRESTATIONS & TARIFS -->
-    <section id="prestations" class="bg-white py-20 shadow-inner">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center space-y-3 mb-16">
-                <h2 class="font-serif text-3xl md:text-5xl font-bold">Le Menu de l'Institut</h2>
-                <div class="w-24 h-0.5 bg-[#8A7156] mx-auto"></div>
-                <p class="text-gray-500">Prestations soignées signées @titoumbeauty</p>
-            </div>
-
-            <!-- BLOC : LISSAGES -->
-            <div class="mb-12">
-                <h3 class="font-serif text-2xl font-bold text-[#8A7156] mb-6 flex items-center gap-2">
-                    <span>✨</span> Lissages Professionnels
-                </h3>
-                <div class="space-y-4 bg-[#FAF7F2] p-6 rounded-2xl">
-                    <div class="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                        <div>
-                            <h4 class="font-semibold text-lg">Lissage Brésilien</h4>
-                            <p class="text-sm text-gray-500">Soin à la kératine pour dompter le volume et faire briller.</p>
-                        </div>
-                        <span class="font-semibold text-[#8A7156]">Sur devis</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <div>
-                            <h4 class="font-semibold text-lg">Lissage au Tanin / Soin Profond</h4>
-                            <p class="text-sm text-gray-500">Réparation intense de la fibre capillaire.</p>
-                        </div>
-                        <span class="font-semibold text-[#8A7156]">Sur devis</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BLOC : ONGLERIE & PÉDICURE -->
-            <div>
-                <h3 class="font-serif text-2xl font-bold text-[#8A7156] mb-6 flex items-center gap-2">
-                    <span>💅</span> Manucure & Pédicure
-                </h3>
-                <div class="space-y-4 bg-[#FAF7F2] p-6 rounded-2xl">
-                    <div class="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                        <div>
-                            <h4 class="font-semibold text-lg">Manucure & Pose Semi-Permanent</h4>
-                            <p class="text-sm text-gray-500">Nettoyage des cuticules, mise en forme et couleur longue tenue.</p>
-                        </div>
-                        <span class="font-semibold text-[#8A7156]">À partir de 30€</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <div>
-                            <h4 class="font-semibold text-lg">Soin Pédicure Complet</h4>
-                            <p class="text-sm text-gray-500">Soin relaxant des pieds, gommage et mise en beauté des ongles.</p>
-                        </div>
-                        <span class="font-semibold text-[#8A7156]">À partir de 40€</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION INSTAGRAM GALERIE -->
-    <section id="instagram" class="max-w-6xl mx-auto px-4 py-20">
-        <div class="text-center space-y-3 mb-12">
-            <h2 class="font-serif text-3xl md:text-4xl font-bold">Suivez @titoumbeauty</h2>
-            <p class="text-gray-500">Aperçu des derniers lissages et poses d'ongles sur Instagram</p>
-        </div>
-        
-        <!-- Galerie de 3 fausses photos pour l'instant (à remplacer par ses vraies images ou un widget d'intégration) -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-gray-200 h-80 rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=80" alt="Manucure" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">💅 Manucure</div>
-            </div>
-            <div class="bg-gray-200 h-80 rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=500&q=80" alt="Lissage" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">✨ Lissage Brillance</div>
-            </div>
-            <div class="bg-gray-200 h-80 rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=500&q=80" alt="Pédicure" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">🦶 Pédicure Spa</div>
-            </div>
-        </div>
-        
-        <div class="text-center mt-8">
-            <a href="https://www.instagram.com/titoumbeauty/" target="_blank" class="text-[#8A7156] font-semibold hover:underline">
-                Ouvrir directement l'application Instagram pour en voir plus →
+        <div class="flex flex-col">
+            <a href="#" class="font-serif text-2xl font-bold tracking-[4px] text-[#8A7156]">
+                TITOUM BEAUTY
             </a>
-        </div>
-    </section>
 
-    <!-- SECTION RÉSERVATION -->
-    <section id="reservation" class="max-w-4xl mx-auto px-4 py-12 bg-white rounded-3xl shadow-xl mb-20 border border-gray-100">
-        <div class="text-center space-y-3 mb-8">
-            <h2 class="font-serif text-2xl md:text-3xl font-bold">Planifier une séance avec Keltoum Nadia</h2>
-            <p class="text-sm text-gray-500">Sélectionnez vos soins et réservez votre moment</p>
+            <span class="text-[10px] uppercase tracking-[3px] text-gray-400">
+                Par Keltoum Nadia
+            </span>
         </div>
-        
-        <!-- Widget de démo de calendrier -->
-        <div class="min-h-[500px]">
-            <iframe src="https://calendly.com/dunked-demo/30min?hide_landing_page_details=1" 
-                    width="100%" 
-                    height="500" 
-                    frameborder="0">
-            </iframe>
-        </div>
-    </section>
 
-    <!-- PIED DE PAGE -->
-    <footer class="bg-[#1A1A1A] text-gray-400 py-12 text-center md:text-left">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-                <h4 class="font-serif text-white text-xl font-bold mb-2">TITOUM BEAUTY</h4>
-                <p class="text-sm max-w-sm">Entreprise gérée par Belmadani Keltoum Nadia. Prestations de lissage brésilien, manucure et pédicure haut de gamme.</p>
-            </div>
-            <div class="md:text-right space-y-2">
-                <h4 class="text-white font-semibold">Contact & Réservations</h4>
-                <p class="text-sm">Contact privilégié via Instagram : <a href="https://www.instagram.com/titoumbeauty/" target="_blank" class="text-[#8A7156] hover:underline">@titoumbeauty</a></p>
-                <p class="text-xs text-gray-500">Bir El Djir, Oran</p>
-            </div>
+        <div class="flex items-center gap-6 font-medium">
+
+            <a href="#prestations" class="hidden md:block hover:text-[#8A7156] transition">
+                Prestations
+            </a>
+
+            <a href="#instagram" class="hidden md:block hover:text-[#8A7156] transition">
+                Galerie
+            </a>
+
+            <a href="#avis" class="hidden md:block hover:text-[#8A7156] transition">
+                Avis
+            </a>
+
+            <a href="#reservation"
+               class="bg-[#8A7156] hover:bg-[#725C44] text-white px-5 py-3 rounded-full transition">
+                Réserver
+            </a>
+
         </div>
-        <div class="text-center text-xs mt-12 pt-6 border-t border-gray-800">
-            &copy; 2026 Titoum Beauty. Création de site vitrine.
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-gradient">
+
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-16 items-center">
+
+        <div class="space-y-8">
+
+            <span class="uppercase tracking-[4px] text-[#8A7156] font-semibold text-sm">
+                Institut de Beauté Premium
+            </span>
+
+            <h1 class="font-serif text-5xl md:text-7xl font-bold leading-tight text-[#1A1A1A]">
+
+                Lissage & Onglerie
+                <span class="italic text-[#8A7156]">
+                    Haut de Gamme
+                </span>
+
+            </h1>
+
+            <p class="text-gray-600 text-lg leading-relaxed">
+                Bienvenue chez <strong>Titoum Beauty</strong>.
+                Découvrez des soins capillaires professionnels,
+                des lissages premium, des manucures élégantes
+                et une expérience beauté raffinée.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+
+                <a href="#reservation"
+                   class="bg-[#1A1A1A] hover:bg-black text-white px-8 py-4 rounded-full shadow-lg transition font-semibold">
+
+                    Réserver maintenant
+
+                </a>
+
+                <a href="https://www.instagram.com/titoumbeauty/"
+                   target="_blank"
+                   class="border border-gray-300 bg-white hover:bg-gray-50 px-8 py-4 rounded-full font-semibold transition">
+
+                    Instagram
+
+                </a>
+
+            </div>
+
         </div>
-    </footer>
+
+        <!-- IMAGE -->
+        <div>
+
+            <img
+                src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80"
+                alt="Titoum Beauty"
+                class="w-full h-[550px] object-cover rounded-[40px] shadow-2xl border-4 border-white"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRESTATIONS -->
+<section id="prestations" class="py-24 bg-white">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+        <div class="text-center mb-20">
+
+            <h2 class="font-serif text-5xl font-bold mb-4">
+                Nos Prestations
+            </h2>
+
+            <div class="w-24 h-[2px] bg-[#8A7156] mx-auto mb-6"></div>
+
+            <p class="text-gray-500">
+                Des soins beauté élégants adaptés à chaque femme.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+
+            <!-- LISSAGE -->
+            <div class="bg-[#FAF7F2] p-10 rounded-[30px] shadow-sm">
+
+                <div class="text-5xl mb-6">✨</div>
+
+                <h3 class="font-serif text-3xl font-bold mb-6 text-[#8A7156]">
+                    Lissages Professionnels
+                </h3>
+
+                <div class="space-y-6">
+
+                    <div class="border-b border-gray-200 pb-4">
+
+                        <div class="flex justify-between">
+
+                            <h4 class="font-semibold text-lg">
+                                Lissage Brésilien
+                            </h4>
+
+                            <span class="text-[#8A7156] font-semibold">
+                                Sur devis
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Brillance, souplesse et réduction du volume.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <div class="flex justify-between">
+
+                            <h4 class="font-semibold text-lg">
+                                Lissage Tanin
+                            </h4>
+
+                            <span class="text-[#8A7156] font-semibold">
+                                Sur devis
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Réparation intense de la fibre capillaire.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ONGLES -->
+            <div class="bg-[#FAF7F2] p-10 rounded-[30px] shadow-sm">
+
+                <div class="text-5xl mb-6">💅</div>
+
+                <h3 class="font-serif text-3xl font-bold mb-6 text-[#8A7156]">
+                    Onglerie & Pédicure
+                </h3>
+
+                <div class="space-y-6">
+
+                    <div class="border-b border-gray-200 pb-4">
+
+                        <div class="flex justify-between">
+
+                            <h4 class="font-semibold text-lg">
+                                Semi Permanent
+                            </h4>
+
+                            <span class="text-[#8A7156] font-semibold">
+                                Dès 30€
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Manucure soignée et finition élégante.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <div class="flex justify-between">
+
+                            <h4 class="font-semibold text-lg">
+                                Pédicure Spa
+                            </h4>
+
+                            <span class="text-[#8A7156] font-semibold">
+                                Dès 40€
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Soin relaxant complet des pieds.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="py-24">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+        <div class="text-center mb-20">
+
+            <h2 class="font-serif text-5xl font-bold">
+                Pourquoi choisir Titoum Beauty ?
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-10 text-center">
+
+            <div class="space-y-4">
+
+                <div class="text-6xl">✨</div>
+
+                <h3 class="font-semibold text-xl">
+                    Produits Premium
+                </h3>
+
+                <p class="text-gray-500 text-sm">
+                    Des soins professionnels pour protéger vos cheveux et vos ongles.
+                </p>
+
+            </div>
+
+            <div class="space-y-4">
+
+                <div class="text-6xl">💖</div>
+
+                <h3 class="font-semibold text-xl">
+                    Ambiance Relaxante
+                </h3>
+
+                <p class="text-gray-500 text-sm">
+                    Une expérience beauté chic et confortable.
+                </p>
+
+            </div>
+
+            <div class="space-y-4">
+
+                <div class="text-6xl">💅</div>
+
+                <h3 class="font-semibold text-xl">
+                    Expertise Moderne
+                </h3>
+
+                <p class="text-gray-500 text-sm">
+                    Techniques modernes de lissage et onglerie.
+                </p>
+
+            </div>
+
+            <div class="space-y-4">
+
+                <div class="text-6xl">🌸</div>
+
+                <h3 class="font-semibold text-xl">
+                    Résultats Durables
+                </h3>
+
+                <p class="text-gray-500 text-sm">
+                    Un rendu élégant qui tient dans le temps.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALERIE -->
+<section id="instagram" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <div class="text-center mb-20">
+
+            <span class="uppercase tracking-[4px] text-[#8A7156] text-sm font-semibold">
+                Instagram • @titoumbeauty
+            </span>
+
+            <h2 class="font-serif text-5xl font-bold mt-4">
+                Nos Réalisations
+            </h2>
+
+            <p class="text-gray-500 mt-4">
+                Découvrez quelques réalisations beauté.
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <!-- PHOTO -->
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    ✨ Lissage
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    💅 Ongles
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    🦶 Spa
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    👑 Premium
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    💖 Nail Art
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    🌸 Beauty
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    🤍 Glow
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    🧖 Spa Care
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[30px] shadow-lg">
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="overlay absolute inset-0"></div>
+
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold">
+                    ✨ Shine
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+        <div class="text-center mt-12">
+
+            <a href="https://www.instagram.com/titoumbeauty/"
+               target="_blank"
+               class="inline-flex items-center gap-3 bg-[#8A7156] hover:bg-[#725C44] text-white px-8 py-4 rounded-full font-semibold shadow-lg transition">
+
+                Voir Instagram →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- AVIS -->
+<section id="avis" class="py-24">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+        <div class="text-center mb-20">
+
+            <h2 class="font-serif text-5xl font-bold">
+                Avis Clientes
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="bg-white p-8 rounded-[30px] shadow-sm">
+
+                <p class="italic text-gray-600 leading-relaxed">
+                    “Le meilleur lissage que j’ai fait à Oran.
+                    Résultat incroyable.”
+                </p>
+
+                <div class="mt-6 font-semibold text-[#8A7156]">
+                    — Sarah M.
+                </div>
+
+            </div>
+
+            <div class="bg-white p-8 rounded-[30px] shadow-sm">
+
+                <p class="italic text-gray-600 leading-relaxed">
+                    “Très professionnelle et très propre.
+                    Je recommande fortement.”
+                </p>
+
+                <div class="mt-6 font-semibold text-[#8A7156]">
+                    — Lina B.
+                </div>
+
+            </div>
+
+            <div class="bg-white p-8 rounded-[30px] shadow-sm">
+
+                <p class="italic text-gray-600 leading-relaxed">
+                    “Mes ongles tiennent parfaitement.
+                    Travail magnifique.”
+                </p>
+
+                <div class="mt-6 font-semibold text-[#8A7156]">
+                    — Yasmine K.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESERVATION -->
+<section id="reservation" class="max-w-5xl mx-auto px-4 pb-24">
+
+    <div class="bg-white rounded-[40px] shadow-2xl p-8 md:p-12">
+
+        <div class="text-center mb-10">
+
+            <h2 class="font-serif text-4xl font-bold mb-4">
+                Réserver votre séance
+            </h2>
+
+            <p class="text-gray-500">
+                Prenez rendez-vous directement en ligne.
+            </p>
+
+        </div>
+
+        <iframe
+            src="https://calendly.com/dunked-demo/30min?hide_landing_page_details=1"
+            width="100%"
+            height="650"
+            frameborder="0"
+            class="rounded-3xl"
+        ></iframe>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#1A1A1A] text-gray-400 py-16">
+
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+
+        <div>
+
+            <h3 class="font-serif text-3xl text-white font-bold mb-4">
+                TITOUM BEAUTY
+            </h3>
+
+            <p class="max-w-md text-sm leading-relaxed">
+                Institut de beauté spécialisé en lissage,
+                manucure, pédicure et soins premium.
+            </p>
+
+        </div>
+
+        <div class="md:text-right space-y-3">
+
+            <h4 class="text-white font-semibold text-lg">
+                Contact
+            </h4>
+
+            <p class="text-sm">
+                Instagram :
+                <a href="https://www.instagram.com/titoumbeauty/"
+                   target="_blank"
+                   class="text-[#8A7156] hover:underline">
+
+                    @titoumbeauty
+
+                </a>
+            </p>
+
+            <p class="text-sm">
+                Bir El Djir, Oran
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-xs text-gray-500">
+
+        © 2026 Titoum Beauty — Tous droits réservés.
+
+    </div>
+
+</footer>
 
 </body>
 </html>
